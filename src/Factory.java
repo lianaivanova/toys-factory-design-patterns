@@ -1,5 +1,3 @@
-package com.company;
-
 // Factory pattern
 public abstract class Factory {
     private int toyID;

@@ -1,11 +1,9 @@
-package com.company;
-
 public class DollCommand implements MagicCommand {
     private static final String DOLL_COMMAND = "i need dolls";
 
     @Override
     public void printCommandOnBoard() {
-        System.out.println("****** \nDOLLS \n******");
+        System.out.println("\n****** \nDOLLS \n******\n");
     }
 
     @Override

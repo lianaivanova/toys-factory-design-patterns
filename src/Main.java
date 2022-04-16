@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -13,9 +11,9 @@ public class Main {
         Factory dollFactory = new DollFactory();
         List<Factory> factories = Arrays.asList(bikeFactory, dollFactory);
 
-        Elf elf1 = new Elf("Genc", factories, santaClaus);
-        Elf elf2 = new Elf("Lia", factories, santaClaus);
-        Elf elf3 = new Elf("Nemo", factories, santaClaus);
+        Elf elf1 = new Elf("Dobby", factories, santaClaus);
+        Elf elf2 = new Elf("Bing", factories, santaClaus);
+        Elf elf3 = new Elf("Willy", factories, santaClaus);
 
         santaClaus.subscribeElvesToMagicBord(Arrays.asList(elf1, elf2, elf3));
 
@@ -30,7 +28,7 @@ public class Main {
             String command = in.nextLine();
             if (command.equalsIgnoreCase("toys")) {
                 santaClaus.checkBagOfToys();
-            } else if (command.equalsIgnoreCase("exit")) {
+            } else if (command.equalsIgnoreCase("close")) {
                 break;
             } else {
                 try {

@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.List;
 
 public class Elf {
@@ -23,10 +21,10 @@ public class Elf {
         if (!magicBoard.getCurrentWorkingElfName().equals(name)) {
             return;
         }
-        System.out.println(name + " is building the toy\n"
+        System.out.println("Elf " + name + " is building the toy\n"
                 + "-------------------------");
         for (Factory factory : toyFactories) {
-            MagicCommand command = magicBoard.getCurrentCommand();
+           MagicCommand command = magicBoard.getCurrentCommand();
             String factoryType = factory.getFactoryType().split("\\W+")[0];
             if (command.getToyTypeFromCommand().equals(factoryType.toLowerCase())) {
                 Toy toy = factory.buildToy();

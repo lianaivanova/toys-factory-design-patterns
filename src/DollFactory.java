@@ -1,5 +1,3 @@
-package com.company;
-
 public class DollFactory extends Factory {
     private static final String FACTORY_TYPE = "Dolls Factory";
 

@@ -1,11 +1,9 @@
-package com.company;
-
 public class BikeCommand implements MagicCommand {
     private static final String BIKE_COMMAND = "i need bikes";
 
     @Override
     public void printCommandOnBoard() {
-        System.out.println("****** \nBIKES \n******");
+        System.out.println("\n****** \nBIKES \n******\n");
     }
 
     @Override

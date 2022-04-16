@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +28,7 @@ public class SantaClaus {
         if (bagOfToys.isEmpty()) {
             System.out.println("Bag of toys is empty!");
         }
+        System.out.println("\nToys in the bag: ");
         for (Toy toy : bagOfToys) {
             System.out.println(toy.getToyDescription());
         }
