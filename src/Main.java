@@ -34,7 +34,7 @@ public class Main {
                 try {
                     santaClaus.writeToMagicBoard(command);
                 } catch (CommandNotFoundException ex) {
-                    ex.printStackTrace();
+                    ex.printWarningMsg();
                 }
             }
         }
